@@ -10,10 +10,10 @@ a{
 header{
     display: flex;
     height: 70px;
-    background-color: rgb(250, 237, 223);
+    background-color: rgb(255, 255, 255);
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 15px;
 }
 
 .logo{
@@ -21,8 +21,8 @@ header{
     align-items: center;
 }
 .logo img{
-    height: 50px;
-    margin-right: 10px;
+    height: 100px;
+    margin-right: 20px;
 }
 nav a{
     font-weight: 600;
