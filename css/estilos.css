@@ -1,0 +1,42 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    background-color: rgb(245, 158, 100);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    display: flex;
+    height: 70px;
+    background-color: rgb(250, 237, 223);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: white;
+ }
+ @media (max-whdth:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+ }
