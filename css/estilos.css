@@ -54,3 +54,12 @@ a{
     color: #fff;
     
 }
+.contenedor-menu2{
+    width: 20%;
+    min-width: 300px;
+    margin: 50px;
+ 
+    font-family: Verdana, sans-serif;
+    line-height: 18px;
+    float:left;
+}
