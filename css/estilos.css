@@ -7,9 +7,14 @@
 }
 
 body{
-    background: #0b2027;
+    background: #5000b9;
     font-family: Verdana, sans-serif;
     line-height: 18px;
+    font-style: italic;
+}
+img{
+    float:right;
+    padding-bottom: 100%;
 }
 
 a{
@@ -54,12 +59,22 @@ a{
     color: #fff;
     
 }
-.contenedor-menu2{
-    width: 20%;
-    min-width: 300px;
-    margin: 50px;
- 
-    font-family: Verdana, sans-serif;
-    line-height: 18px;
-    float:left;
+@media screen and (max-width: 450px){
+    body {
+        padding-top: 80px;
+    }
+    
+    .contenedor-menu{
+        margin: 0;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+    }
+    .btn-menu {
+        display: block;
+    }
+    .contenedor-menu .menu {
+        display: none;
+    }
 }
