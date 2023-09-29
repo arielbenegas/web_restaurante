@@ -12,11 +12,43 @@ body{
     line-height: 18px;
     font-style: italic;
 }
-img{
-    float:right;
-    padding-bottom: 100%;
+h1{
+    padding-block: 2%;
+    text-align: center;
+    
 }
-
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+}
+.row {
+    padding-top: 40px;
+    max-width: 600px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 290px);
+    grid-template-rows: repeat(2, 250px);
+    min-height: 500px;
+    gap: 20px;
+    position: relative;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+  
+ 
 a{
     text-decoration: none;
     color:#fff;
@@ -32,6 +64,7 @@ a{
     float: right;
 }
 .contenedor-menu{
+    
     width: 20%;
     min-width: 300px;
     margin: 50px;
@@ -78,3 +111,10 @@ a{
         display: none;
     }
 }
+ /* Responsive layout - makes a two column-layout instead of four columns */
+ @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
